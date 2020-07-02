@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D动画</title>
+	<style type="text/css">
+		.dv {
+			position: relative;
+			perspective: 500px;
+		}
+		.aa {
+			width: 100px;
+			height: 100px;
+			background-color: pink;	
+			margin: 100px;
+			transition: all 1s;
+			left: 50%;
+			/*transform: translateX(-50%);*/
+			/*transform-origin: bottom;*/
+			position: absolute;
+		}
+		.aa:hover {
+			transform: rotateX(360deg);
+		}
+		#au {
+			width: 100px
+			height: 100px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="dv">
+		<div class="aa"></div>
+		<audio id="au" src="china.mp3" autoplay="autoplay" controls="controls" muted="muted" loop="loop"></audio>
+	</div>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
